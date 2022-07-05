@@ -1,0 +1,26 @@
+2022/7/5 下午 03:34:16:    於 CallSite.Target(Closure , CallSite , String , Object )
+   於 WebTest.Handler.HomeHandler.DumpData()
+無法將運算子 '*' 套用至類型 'string' 和 'int' 的運算元
+2022/7/5 下午 03:34:34:    於 CallSite.Target(Closure , CallSite , String , Object )
+   於 WebTest.Handler.HomeHandler.DumpData()
+無法將運算子 '*' 套用至類型 'string' 和 'int' 的運算元
+2022/7/5 下午 03:36:15    於 CallSite.Target(Closure , CallSite , String , Object )
+   於 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   於 WebTest.Handler.HomeHandler.DumpData() 於 C:\Users\USER\Desktop\WebTest\WebTest\WebTest\Handler\HomeHandler.ashx.cs: 行 21
+無法將運算子 '*' 套用至類型 'string' 和 'int' 的運算元
+2022/7/5 下午 03:36:18    於 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   於 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   於 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   於 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   於 WebTest.Handler.BaseHandler.ProcessRequest(HttpContext context) 於 C:\Users\USER\Desktop\WebTest\WebTest\WebTest\Handler\BaseHandler.ashx.cs: 行 30
+引動過程的目標傳回例外狀況。
+2022/7/5 下午 08:08:41    於 CallSite.Target(Closure , CallSite , String , Object )
+   於 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   於 WebTest.Handler.HomeHandler.DumpData() 於 A:\Git\WebTest\WebTest\Handler\HomeHandler.ashx.cs: 行 21
+無法將運算子 '*' 套用至類型 'string' 和 'int' 的運算元
+2022/7/5 下午 08:09:08    於 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   於 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   於 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   於 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   於 WebTest.Handler.BaseHandler.ProcessRequest(HttpContext context) 於 A:\Git\WebTest\WebTest\Handler\BaseHandler.ashx.cs: 行 30
+引動過程的目標傳回例外狀況。

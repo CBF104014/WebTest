@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html class="h-100">
+<head>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body class="h-100">
+    <div id="main_header" style="height:10%"></div>
+    <div id="main_body" style="height:80%"></div>
+    <div id="main_footer" style="height:5%"></div>
+</body>
+</html>
+<template id="main_header_template">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" onclick="LoadHtml('Index.html')">首頁</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="LoadHtml('View/Home/Index.html')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="LoadHtml('View/Home/Index.html')">Other</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</template>
+<template id="main_body_template">
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+</template>
+<template id="main_footer_template">
+    <hr class="mb-3" />
+</template>
+<script src="Script/jquery-3.6.0.min.js"></script>
+<script src="Script/bootstrap.bundle.min.js"></script>
+<script src="Script/global.js"></script>
