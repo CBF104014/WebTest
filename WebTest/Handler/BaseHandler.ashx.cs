@@ -15,19 +15,18 @@ namespace WebTest.Handler
     /// </summary>
     public class BaseHandler : IHttpHandler
     {
-		public HttpContext _context;
+		public HttpContext _context { get { return HttpContext.Current; } }
 		public bool IsReusable { get { return false; } }
 		public void ProcessRequest(HttpContext context)
 		{
             try
 			{
-				_context = context;
 				var UrlArr = HttpContext.Current.Request.RawUrl.Split('/');
 				var HandlerName = UrlArr.First(x => x.Contains(".ashx")).Replace(".ashx", "");
 				var FunctionName = UrlArr[UrlArr.Length - 1];
 				var ClassType = Type.GetType($"WebTest.Handler.{HandlerName}");
-				var HandlerConstructor = ClassType.GetConstructor(new[] { typeof(HttpContext) });
-				ClassType.GetMethod(FunctionName).Invoke(HandlerConstructor.Invoke(new object[] { context }), null);
+				var HandlerConstructor = ClassType.GetConstructor(new Type[] { });
+				ClassType.GetMethod(FunctionName).Invoke(HandlerConstructor.Invoke(new object[] { }), null);
 			}
             catch (Exception ex)
             {

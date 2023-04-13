@@ -11,8 +11,6 @@ namespace WebTest.Handler
     /// </summary>
     public class HomeHandler : BaseHandler
     {
-        public HomeHandler() { }
-        public HomeHandler(HttpContext context) { this._context = context; }
         public void DumpData()
         {
             try
